@@ -1,0 +1,26 @@
+kitchen food project:
+
+thumbnails not totally implemented. right now just hardcoding 120x120
+
+COMPLETE(cannot add image on insert) VALIDATION ON ALL ADMIN PAGES (add, edit etc.)
+USE GENVALIDATOR 4 FOR THIS.
+
+when in edit cyclone card price does not work correctly
+
+inventory management system for setting food prices and uploading images. when clicked, show more details about them.
+
+NOTES:
+	
+FOR ADDING A FOOD ITEM, WHEN THEY INSERT IT INTO THE DATABASE, TRACK THE ID, AND REDIRECT TO THE UPLOAD PAGE WITH
+THAT ID PASSED TO IT. SIMULATING ADDING AN IMAGE ON INSERT.
+
+CATEGORY MAINTENANCE ALMOST FINISHED.
+
+1. only logged in verified users can look at and modify the inventory
+
+2. have a way to upload jpgs (thumbnails) and when they select a food item, expand it and show the full image
+(user side)
+
+5 Add the ability for them to add an image when they add an item to the inventory! to do this we can have it post back to the
+same script (add.php or so) and then use mysql_fetch_id or whatever to post back the same page with that new id posted in the url
+after we do that, you can then update the picture name with the same decision structure we use in upload.php
